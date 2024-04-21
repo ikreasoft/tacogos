@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de objetos con scroll numérico</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Listado de objetos</h1>
+    
+    <div>
+        <img id="imagen-responsive" src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=290,fit=crop,q=95/mk3lKWMZKLu1ejnQ/whatsapp-image-2023-05-02-at-22.44.00-1-Yg270bz2RaSaQO4k.jpeg" alt="tacogos-logo">
+    </div>
+
+    <form id="pedidoForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="60bf281c-b2e3-4f6a-b200-ddb1c464b74f">
+        <div>
+            <!-- Form Inputs. Each input must have a name="" attribute -->
+            Name: <br>
+            <input type="text" id="name" name="name" required> <br>
+            E-Mail: <br>            
+            <input type="email" id="email" name="email" required> <br>
+            Note: <br>
+            <textarea name="message" required></textarea>
+        </div>
+        <!-- hCaptcha Spam Protection -->
+        <div class="h-captcha" data-captcha="true"></div>
+
+        <div class="contenedor-lista">            
+            <table class="tabla-objetos">
+                <thead>
+                    <tr>
+                        <th>Objeto</th>
+                        <th>Cantidad</th>                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Manzanas</td>
+                        <td><input type="number" inputmode="numeric" min="0" value="0" name="cantidadManzanas"></td>                        
+                    </tr>
+                    <tr>
+                        <td>Naranjas</td>
+                        <td><input type="number" inputmode="numeric" min="0" value="0" name="cantidadNaranjas"></td>                        
+                    </tr>
+                    <tr>
+                        <td>Leche</td>
+                        <td><input type="number" inputmode="numeric" min="0" value="0" name="cantidadLeche"></td>                        
+                    </tr>
+                </tbody>
+            </table>
+                        
+        </div>
+        <!-- Botón para mostrar la pantalla de confirmación -->
+        <button type="button" id="mostrarConfirmacion" >Pedir a cocina</button>
+        
+        <!-- Pantalla de confirmación (oculta por defecto) -->
+        <div id="pantallaConfirmacion">
+            <p>Confirma tu pedido:</p>
+            <!-- Mostrar aquí el resumen del pedido -->
+            <div id="resumenPedido"></div>
+            <!-- Enviar solicitud -->
+            <!-- <button type="submit" onclick="enviarPedido()">Enviar Pedido</button> -->
+            <button type="button" id="confirmarPedido">Confirmar Pedido</button>
+            <button type="button" id="cancelarPedido">Cancelar</button>
+        </div>
+        
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
