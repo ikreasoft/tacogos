@@ -1,5 +1,6 @@
 using Empleado.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace Empleado.Controllers
@@ -7,10 +8,12 @@ namespace Empleado.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly TacogoBdContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, TacogoBdContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
@@ -18,9 +21,14 @@ namespace Empleado.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Caja()
         {
             return View();
+        }
+
+        public async Task<IActionResult> Cocina()
+        {
+            return View(await _context.Pedidos.ToListAsync());
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

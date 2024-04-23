@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yo\\Desktop\\git\\Projecto-IKREA\\tacogos\\Tacogos\\Empleado\\Empleado.csproj": {}
+    "C:\\Users\\alfos\\Desktop\\Iasv2\\IAV2\\tacogos\\Tacogos\\Empleado\\Empleado.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yo\\Desktop\\git\\Projecto-IKREA\\tacogos\\Tacogos\\Empleado\\Empleado.csproj": {
+    "C:\\Users\\alfos\\Desktop\\Iasv2\\IAV2\\tacogos\\Tacogos\\Empleado\\Empleado.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yo\\Desktop\\git\\Projecto-IKREA\\tacogos\\Tacogos\\Empleado\\Empleado.csproj",
+        "projectUniqueName": "C:\\Users\\alfos\\Desktop\\Iasv2\\IAV2\\tacogos\\Tacogos\\Empleado\\Empleado.csproj",
         "projectName": "Empleado",
-        "projectPath": "C:\\Users\\yo\\Desktop\\git\\Projecto-IKREA\\tacogos\\Tacogos\\Empleado\\Empleado.csproj",
-        "packagesPath": "C:\\Users\\yo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yo\\Desktop\\git\\Projecto-IKREA\\tacogos\\Tacogos\\Empleado\\obj\\",
+        "projectPath": "C:\\Users\\alfos\\Desktop\\Iasv2\\IAV2\\tacogos\\Tacogos\\Empleado\\Empleado.csproj",
+        "packagesPath": "C:\\Users\\alfos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alfos\\Desktop\\Iasv2\\IAV2\\tacogos\\Tacogos\\Empleado\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\25.1.35\\ToolboxNuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\yo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alfos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Syncfusion Toolbox for WPF.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -47,9 +45,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -60,6 +66,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.4, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             }
           },
           "imports": [
