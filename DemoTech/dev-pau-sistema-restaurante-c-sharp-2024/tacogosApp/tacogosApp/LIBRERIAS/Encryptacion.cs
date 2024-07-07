@@ -13,7 +13,7 @@ using System.Security.Cryptography.Xml;
 // Date: 2024.04.28
 namespace tacogosApp.LIBRERIAS
 {
-    class Encryptacion
+    class AES
     {
         // Declaración del constructor de encriptación de datos
         private byte[] Encrypt(byte[] clearData, byte[] Key, byte[] IV)

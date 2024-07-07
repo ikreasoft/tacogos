@@ -17,3 +17,5 @@ D:\Documentos\UCLM\3ro\SGSI\tacogos\DemoTech\dev-pau-sistema-restaurante-c-sharp
 D:\Documentos\UCLM\3ro\SGSI\tacogos\DemoTech\dev-pau-sistema-restaurante-c-sharp-2024\tacogosApp\tacogosApp\obj\Debug\net8.0-windows\tacogosApp.pdb
 D:\Documentos\UCLM\3ro\SGSI\tacogos\DemoTech\dev-pau-sistema-restaurante-c-sharp-2024\tacogosApp\tacogosApp\obj\Debug\net8.0-windows\tacogosApp.genruntimeconfig.cache
 D:\Documentos\UCLM\3ro\SGSI\tacogos\DemoTech\dev-pau-sistema-restaurante-c-sharp-2024\tacogosApp\tacogosApp\obj\Debug\net8.0-windows\ref\tacogosApp.dll
+D:\Documentos\UCLM\3ro\SGSI\tacogos\DemoTech\dev-pau-sistema-restaurante-c-sharp-2024\tacogosApp\tacogosApp\obj\Debug\net8.0-windows\tacogosApp.MODULOS.Mesas_salones.Configurar_mesas_ok.resources
+D:\Documentos\UCLM\3ro\SGSI\tacogos\DemoTech\dev-pau-sistema-restaurante-c-sharp-2024\tacogosApp\tacogosApp\obj\Debug\net8.0-windows\tacogosApp.MODULOS.Mesas_salones.Salones.resources

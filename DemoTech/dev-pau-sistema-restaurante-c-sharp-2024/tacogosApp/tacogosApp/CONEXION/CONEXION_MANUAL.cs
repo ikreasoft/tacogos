@@ -14,7 +14,7 @@ namespace tacogosApp.CONEXION
     public partial class CONEXION_MANUAL : Form
     {
         // Referencia a la encriptacion y desencriptacion de los datos transmitidos
-        private LIBRERIAS.Encryptacion conexionEncriptada = new LIBRERIAS.Encryptacion();
+        private LIBRERIAS.AES conexionEncriptada = new LIBRERIAS.AES();
         string dbcnString;
         private string XML_FILE_CADENA_CONEXION = "ConnectionString.xml";
 
@@ -50,7 +50,7 @@ namespace tacogosApp.CONEXION
                 xmlDoc.Load(XML_FILE_CADENA_CONEXION);
                 XmlElement root = xmlDoc.DocumentElement;
                 dbcnString = root.Attributes[0].Value;
-                // Texbox de mi formularaio
+                // Textbox de mi formularaio
                 txtCnString.Text = (conexionEncriptada.Decrypt(dbcnString, LIBRERIAS.Desencryptacion.appPwdUnique, int.Parse("256")));
             } catch ( System.Security.Cryptography.CryptographicException e )
             {

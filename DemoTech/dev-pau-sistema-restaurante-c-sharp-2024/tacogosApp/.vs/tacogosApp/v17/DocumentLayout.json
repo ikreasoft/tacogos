@@ -3,6 +3,31 @@
   "WorkspaceRootPath": "D:\\Documentos\\UCLM\\3ro\\SGSI\\tacogos\\DemoTech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosApp\\",
   "Documents": [
     {
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|d:\\documentos\\uclm\\3ro\\sgsi\\tacogos\\demotech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosapp\\tacogosapp\\modulos\\mesas_salones\\salones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|solutionrelative:tacogosapp\\modulos\\mesas_salones\\salones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|d:\\documentos\\uclm\\3ro\\sgsi\\tacogos\\demotech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosapp\\tacogosapp\\modulos\\mesas_salones\\salones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|solutionrelative:tacogosapp\\modulos\\mesas_salones\\salones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|d:\\documentos\\uclm\\3ro\\sgsi\\tacogos\\demotech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosapp\\tacogosapp\\modulos\\mesas_salones\\configurar_mesas_ok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|solutionrelative:tacogosapp\\modulos\\mesas_salones\\configurar_mesas_ok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|D:\\Documentos\\UCLM\\3ro\\SGSI\\tacogos\\DemoTech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosApp\\tacogosapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|solutionrelative:tacogosapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|d:\\documentos\\uclm\\3ro\\sgsi\\tacogos\\demotech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosapp\\tacogosapp\\modulos\\mesas_salones\\configurar_mesas_ok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|solutionrelative:tacogosapp\\modulos\\mesas_salones\\configurar_mesas_ok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|D:\\Documentos\\UCLM\\3ro\\SGSI\\tacogos\\DemoTech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosApp\\tacogosapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|solutionrelative:tacogosapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
       "AbsoluteMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|d:\\documentos\\uclm\\3ro\\sgsi\\tacogos\\demotech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosapp\\tacogosapp\\librerias\\desencryptacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|solutionrelative:tacogosapp\\librerias\\desencryptacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -29,6 +54,35 @@
     {
       "AbsoluteMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|d:\\documentos\\uclm\\3ro\\sgsi\\tacogos\\demotech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosapp\\tacogosapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|solutionrelative:tacogosapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> parent of e00d914 (Continue develop app C# Tacogos)
+=======
+      "AbsoluteMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|d:\\documentos\\uclm\\3ro\\sgsi\\tacogos\\demotech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosapp\\tacogosapp\\librerias\\desencryptacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|solutionrelative:tacogosapp\\librerias\\desencryptacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|d:\\documentos\\uclm\\3ro\\sgsi\\tacogos\\demotech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosapp\\tacogosapp\\librerias\\encryptacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|solutionrelative:tacogosapp\\librerias\\encryptacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|d:\\documentos\\uclm\\3ro\\sgsi\\tacogos\\demotech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosapp\\tacogosapp\\conexion\\conexion_manual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|solutionrelative:tacogosapp\\conexion\\conexion_manual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|d:\\documentos\\uclm\\3ro\\sgsi\\tacogos\\demotech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosapp\\tacogosapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|solutionrelative:tacogosapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|d:\\documentos\\uclm\\3ro\\sgsi\\tacogos\\demotech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosapp\\tacogosapp\\conexion\\conexionmaestra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|solutionrelative:tacogosapp\\conexion\\conexionmaestra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|d:\\documentos\\uclm\\3ro\\sgsi\\tacogos\\demotech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosapp\\tacogosapp\\conexion\\conexion_manual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|solutionrelative:tacogosapp\\conexion\\conexion_manual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|d:\\documentos\\uclm\\3ro\\sgsi\\tacogos\\demotech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosapp\\tacogosapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2179B6EA-C8DA-4283-8D10-9FE422FA9558}|tacogosApp\\tacogosApp.csproj|solutionrelative:tacogosapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> parent of e00d914 (Continue develop app C# Tacogos)
     }
   ],
   "DocumentGroupContainers": [
@@ -38,10 +92,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 283,
+<<<<<<< HEAD
+<<<<<<< HEAD
+          "SelectedChildIndex": 2,
+=======
           "SelectedChildIndex": 4,
+>>>>>>> parent of e00d914 (Continue develop app C# Tacogos)
+=======
+          "SelectedChildIndex": 4,
+>>>>>>> parent of e00d914 (Continue develop app C# Tacogos)
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
+<<<<<<< HEAD
+<<<<<<< HEAD
+              "DocumentIndex": 1,
+              "Title": "Salones.cs",
+              "DocumentMoniker": "D:\\Documentos\\UCLM\\3ro\\SGSI\\tacogos\\DemoTech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosApp\\tacogosApp\\MODULOS\\Mesas_salones\\Salones.cs",
+              "RelativeDocumentMoniker": "tacogosApp\\MODULOS\\Mesas_salones\\Salones.cs",
+              "ToolTip": "D:\\Documentos\\UCLM\\3ro\\SGSI\\tacogos\\DemoTech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosApp\\tacogosApp\\MODULOS\\Mesas_salones\\Salones.cs",
+              "RelativeToolTip": "tacogosApp\\MODULOS\\Mesas_salones\\Salones.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwCQAAAAzAAAA",
+=======
+=======
+>>>>>>> parent of e00d914 (Continue develop app C# Tacogos)
               "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Documentos\\UCLM\\3ro\\SGSI\\tacogos\\DemoTech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosApp\\tacogosApp\\Program.cs",
@@ -62,24 +140,86 @@
               "ToolTip": "D:\\Documentos\\UCLM\\3ro\\SGSI\\tacogos\\DemoTech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosApp\\tacogosApp\\CONEXION\\CONEXION_MANUAL.cs",
               "RelativeToolTip": "tacogosApp\\CONEXION\\CONEXION_MANUAL.cs",
               "ViewState": "AQIAAC8AAAAAAAAAAAAwwD4AAAAaAAAA",
+<<<<<<< HEAD
+>>>>>>> parent of e00d914 (Continue develop app C# Tacogos)
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T21:33:45.735Z",
+=======
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-28T23:03:46.352Z",
+>>>>>>> parent of e00d914 (Continue develop app C# Tacogos)
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+<<<<<<< HEAD
+              "DocumentIndex": 0,
+              "Title": "Salones.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Documentos\\UCLM\\3ro\\SGSI\\tacogos\\DemoTech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosApp\\tacogosApp\\MODULOS\\Mesas_salones\\Salones.cs",
+              "RelativeDocumentMoniker": "tacogosApp\\MODULOS\\Mesas_salones\\Salones.cs",
+              "ToolTip": "D:\\Documentos\\UCLM\\3ro\\SGSI\\tacogos\\DemoTech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosApp\\tacogosApp\\MODULOS\\Mesas_salones\\Salones.cs [Dise\u00F1o]",
+              "RelativeToolTip": "tacogosApp\\MODULOS\\Mesas_salones\\Salones.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T21:31:47.71Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Configurar_mesas_ok.cs",
+              "DocumentMoniker": "D:\\Documentos\\UCLM\\3ro\\SGSI\\tacogos\\DemoTech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosApp\\tacogosApp\\MODULOS\\Mesas_salones\\Configurar_mesas_ok.cs",
+              "RelativeDocumentMoniker": "tacogosApp\\MODULOS\\Mesas_salones\\Configurar_mesas_ok.cs",
+              "ToolTip": "D:\\Documentos\\UCLM\\3ro\\SGSI\\tacogos\\DemoTech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosApp\\tacogosApp\\MODULOS\\Mesas_salones\\Configurar_mesas_ok.cs",
+              "RelativeToolTip": "tacogosApp\\MODULOS\\Mesas_salones\\Configurar_mesas_ok.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAQwC4AAAAAAAAA",
+=======
+=======
+>>>>>>> parent of e00d914 (Continue develop app C# Tacogos)
               "DocumentIndex": 5,
               "Title": "CONEXION_MANUAL.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Documentos\\UCLM\\3ro\\SGSI\\tacogos\\DemoTech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosApp\\tacogosApp\\CONEXION\\CONEXION_MANUAL.cs",
               "RelativeDocumentMoniker": "tacogosApp\\CONEXION\\CONEXION_MANUAL.cs",
               "ToolTip": "D:\\Documentos\\UCLM\\3ro\\SGSI\\tacogos\\DemoTech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosApp\\tacogosApp\\CONEXION\\CONEXION_MANUAL.cs [Dise\u00F1o]",
               "RelativeToolTip": "tacogosApp\\CONEXION\\CONEXION_MANUAL.cs [Dise\u00F1o]",
+<<<<<<< HEAD
+>>>>>>> parent of e00d914 (Continue develop app C# Tacogos)
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T19:05:09.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Configurar_mesas_ok.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Documentos\\UCLM\\3ro\\SGSI\\tacogos\\DemoTech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosApp\\tacogosApp\\MODULOS\\Mesas_salones\\Configurar_mesas_ok.cs",
+              "RelativeDocumentMoniker": "tacogosApp\\MODULOS\\Mesas_salones\\Configurar_mesas_ok.cs",
+              "ToolTip": "D:\\Documentos\\UCLM\\3ro\\SGSI\\tacogos\\DemoTech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosApp\\tacogosApp\\MODULOS\\Mesas_salones\\Configurar_mesas_ok.cs [Dise\u00F1o]",
+              "RelativeToolTip": "tacogosApp\\MODULOS\\Mesas_salones\\Configurar_mesas_ok.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T19:04:40.299Z",
+=======
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-28T22:22:59.656Z",
+>>>>>>> parent of e00d914 (Continue develop app C# Tacogos)
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+<<<<<<< HEAD
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Documentos\\UCLM\\3ro\\SGSI\\tacogos\\DemoTech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosApp\\tacogosApp\\Program.cs",
+              "RelativeDocumentMoniker": "tacogosApp\\Program.cs",
+              "ToolTip": "D:\\Documentos\\UCLM\\3ro\\SGSI\\tacogos\\DemoTech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosApp\\tacogosApp\\Program.cs",
+              "RelativeToolTip": "tacogosApp\\Program.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAtwBEAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T13:43:16.383Z",
+=======
+=======
+>>>>>>> parent of e00d914 (Continue develop app C# Tacogos)
               "DocumentIndex": 4,
               "Title": "CONEXIONMAESTRA.cs",
               "DocumentMoniker": "D:\\Documentos\\UCLM\\3ro\\SGSI\\tacogos\\DemoTech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosApp\\tacogosApp\\CONEXION\\CONEXIONMAESTRA.cs",
@@ -89,10 +229,17 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-28T10:08:41.827Z",
+>>>>>>> parent of e00d914 (Continue develop app C# Tacogos)
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+<<<<<<< HEAD
+              "DocumentIndex": 5,
+=======
+=======
+>>>>>>> parent of e00d914 (Continue develop app C# Tacogos)
               "DocumentIndex": 0,
               "Title": "Desencryptacion.cs",
               "DocumentMoniker": "D:\\Documentos\\UCLM\\3ro\\SGSI\\tacogos\\DemoTech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosApp\\tacogosApp\\LIBRERIAS\\Desencryptacion.cs",
@@ -120,6 +267,10 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+<<<<<<< HEAD
+>>>>>>> parent of e00d914 (Continue develop app C# Tacogos)
+=======
+>>>>>>> parent of e00d914 (Continue develop app C# Tacogos)
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Documentos\\UCLM\\3ro\\SGSI\\tacogos\\DemoTech\\dev-pau-sistema-restaurante-c-sharp-2024\\tacogosApp\\tacogosApp\\Form1.cs",
               "RelativeDocumentMoniker": "tacogosApp\\Form1.cs",

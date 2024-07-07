@@ -10,7 +10,7 @@ namespace tacogosApp.LIBRERIAS
 {
     internal class Desencryptacion
     {
-        static private Encryptacion aes = new Encryptacion();
+        static private AES aes = new AES();
         static public string CnString;
         static string dbcnString;
         // Firma personal de des/encriptado del software

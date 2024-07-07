@@ -14,7 +14,15 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tacogosApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
+<<<<<<< HEAD
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a16db12020bd1756f93ff6e29c552257d2a4ffd3")]
+=======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f6fde1206506470a96556ab65202e44bffefe01")]
+>>>>>>> parent of e00d914 (Continue develop app C# Tacogos)
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f6fde1206506470a96556ab65202e44bffefe01")]
+>>>>>>> parent of e00d914 (Continue develop app C# Tacogos)
 [assembly: System.Reflection.AssemblyProductAttribute("tacogosApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tacogosApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

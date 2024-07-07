@@ -7,5 +7,11 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="MODULOS\Mesas_salones\Configurar_mesas_ok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MODULOS\Mesas_salones\Salones.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
