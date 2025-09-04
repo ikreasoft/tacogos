@@ -1,41 +1,498 @@
-<!DOCTYPE HTML>
-<!--Aerial by HTML5 UPhtml5up.net | @ajlknFree for personal and commercial use under the CCA 3.0 license (html5up.net/license)-->
-<html>
-	<head>
-		<title>IkreaSoft - Main</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="icon" type="image/ico" href="assets/css/images/ikreasoft.ico"/>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
-				<!-- Header -->
-					<header id="header">
-						<h1>Ikrea Soft</h1>
-						<p>Bienvenido a IkreaSoft donde tus ideas cobran vida &nbsp;&bull;&nbsp; y tú &nbsp;&bull;&nbsp; nos inspiras.</p>
-						<nav>
-							<button type="button">
-								<span><a href="sitetacogos/index.html">Ir a TacoGos.</a></span><i></i>
-							</button>
-						</nav>
-					</header>
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">
-							&copy; IkreaSoft. &nbsp;&bull;&nbsp;|&nbsp;&bull;&nbsp; Design: <a href="http://html5up.net">HTML5 UP</a>. &nbsp;&bull;&nbsp;|
-						</span> 
-					</footer>
-			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TacoGos · Tacos, Pupusas y más en Talavera de la Reina</title>
+  <meta name="description" content="TacoGos: tacos, pupusas, burritos y antojos hechos al momento. Dos locales en Talavera. Delivery desde 2€. Pide por WhatsApp o plataformas." />
+  <meta property="og:title" content="TacoGos · Sabor auténtico en Talavera" />
+  <meta property="og:description" content="Hecho al momento. Ingredientes frescos. Delivery desde 2€. ¡Te esperamos!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./images/logo.png" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="./images/favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { tg: { blue:'#0ea5e9', dark:'#0b74a5', light:'#e0f2fe' } },
+          keyframes: {
+            fadeUp:{ '0%':{opacity:0,transform:'translateY(8px)'}, '100%':{opacity:1,transform:'translateY(0)'} },
+            floaty:{ '0%':{transform:'translateY(0)'}, '50%':{transform:'translateY(-4px)'}, '100%':{transform:'translateY(0)'} }
+          },
+          animation:{ fadeUp:'fadeUp .6s ease-out both', floaty:'floaty 5s ease-in-out infinite' }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass{backdrop-filter:saturate(140%) blur(8px);background:rgba(255,255,255,.65)}
+    .shadow-soft{box-shadow:0 10px 30px rgba(2,132,199,.15)}
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-gradient-to-b from-white to-sky-50">
+  <!-- Aviso -->
+  <div class="w-full text-center text-sm bg-sky-600 text-white py-2">
+    🌮 Hecho con amor en Talavera · Delivery desde 2€ · ¡Gracias por apoyar lo local! 💙
+  </div>
+
+<!-- HEADER -->
+<!-- HEADER -->
+<header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-sky-100">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <!-- Marca -->
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="./images/logo.png" alt="TacoGos" class="h-10 w-auto rounded-lg">
+      <span class="font-black tracking-tight text-xl">TacoGos</span>
+    </a>
+
+    <!-- Nav desktop -->
+    <nav class="hidden md:flex items-center gap-6 text-sm">
+      <a href="menu.html" class="hover:text-sky-600">Menú</a>
+      <a href="index.html#quienes" class="hover:text-sky-600">Quiénes</a>
+      <a href="index.html#ubicaciones" class="hover:text-sky-600">Ubicaciones</a>
+      <a href="index.html#premios" class="hover:text-sky-600">Premios</a>
+      <a href="eventos.html" class="hover:text-sky-600">Eventos</a>
+      <a href="franquicia.html" class="hover:text-sky-600">Franquicia</a>
+      <a href="contacto.html" class="hover:text-sky-600">Contacto</a>
+      <a href="https://wa.me/34611836867" target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-xl shadow-soft">
+        Pedir por WhatsApp
+      </a>
+    </nav>
+
+    <!-- Botón móvil -->
+    <button id="menu-btn" class="md:hidden inline-flex items-center gap-2 px-3 py-2 rounded-xl border border-sky-200 text-sky-700">
+      <span>Menú</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+        <path fill-rule="evenodd" d="M3.75 5.25h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1 0-1.5Zm0 6h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1 0-1.5Zm0 6h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Nav móvil -->
+  <div id="mobile-nav" class="md:hidden hidden border-t border-sky-100">
+    <div class="px-4 py-3 flex flex-col gap-3 bg-white">
+      <a href="menu.html" class="py-1">Menú</a>
+      <a href="index.html#quienes" class="py-1">Quiénes</a>
+      <a href="index.html#ubicaciones" class="py-1">Ubicaciones</a>
+      <a href="index.html#premios" class="py-1">Premios</a>
+      <a href="eventos.html" class="py-1">Eventos</a>
+      <a href="franquicia.html" class="py-1">Franquicia</a>
+      <a href="contacto.html" class="py-1">Contacto</a>
+      <a href="https://wa.me/34611836867" target="_blank" rel="noopener"
+         class="inline-flex items-center justify-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-xl">
+        Pedir por WhatsApp
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- Script para abrir/cerrar el menú móvil -->
+<script>
+  document.getElementById('menu-btn')?.addEventListener('click', () => {
+    document.getElementById('mobile-nav')?.classList.toggle('hidden');
+  });
+</script>
+
+  <!-- HERO -->
+  <section class="relative">
+    <img src="./images/photoshoot_for_tacogos_hero_550x440.jpg" alt="TacoGos Hero" class="w-full h-[520px] object-cover">
+    <div class="absolute inset-0 bg-black/45 flex flex-col items-center justify-center text-center text-white px-4">
+      <span class="inline-block px-3 py-1 rounded-full bg-white/20 text-sm border border-white/30">Talavera de la Reina</span>
+      <h1 class="text-4xl md:text-6xl font-black mt-3 animate-fadeUp">
+        TacoGos · Sabor auténtico <span class="text-sky-300">hechos al momento</span>
+      </h1>
+      <p class="mt-4 max-w-2xl animate-fadeUp">
+                Tacos, pupusas, burritos, Hamburguesas y  mucho más.</p>
+      <div class="mt-6 flex flex-col sm:flex-row gap-3 animate-fadeUp">
+        <a href="https://wa.me/34611836867" target="_blank" rel="noopener" class="bg-sky-500 hover:bg-sky-600 px-6 py-3 rounded-xl shadow-soft">Pedir por WhatsApp</a>
+        <a href="menu.html" class="bg-white/90 text-sky-700 px-6 py-3 rounded-xl">Ver menú</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIÉNES SOMOS (story + carrusel) -->
+  <section id="quienes" class="max-w-7xl mx-auto px-4 py-20">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-black">Quiénes somos</h2>
+        <p class="mt-4 text-slate-700 leading-relaxed">
+          TacoGos nació en 2023 en Talavera como un sueño familiar: llevar la auténtica esencia latina a cada mesa. Amamos el maíz, las salsas caseras y los sabores que hacen recordar momentos felices.
+          Aquí no solo comes: vives la experiencia. Cada taco, pupusa o burger está hecho al instante, con ingredientes frescos y una sonrisa.
+        </p>
+        <ul class="mt-6 space-y-2 text-slate-700">
+          <li>🌮 Nuestro secreto: tradición, cariño y mucho sabor.</li>
+          <li>🥑 Nuestra carta: tacos, pupusas, burritos, quesadillas, hot dogs y smash burgers.</li>
+          <li>💙 Nuestro propósito: que cada bocado te transporte a casa y te saque una sonrisa.</li>
+        </ul>
+        <p class="mt-4 italic text-sky-700">"Un taco, mil recuerdos… el tuyo empieza aquí."</p>
+      </div>
+
+      <!-- Carrusel -->
+      <div class="rounded-2xl shadow-soft overflow-hidden relative">
+        <div id="carousel" class="relative w-full h-80">
+          <img class="carousel-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-500" src="./images/Captura de pantalla 2025-06-29 205343.png" alt="TacoGos 1" loading="lazy">
+          <img class="carousel-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" src="./images/Captura de pantalla 2025-06-29 205518.png" alt="TacoGos 2" loading="lazy">
+          <img class="carousel-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" src="./images/Captura de pantalla 2025-06-29 212325.png" alt="TacoGos 3" loading="lazy">
+          
+          <img class="carousel-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-500" src="./images/Captura de pantalla 2025-06-29 205618.png" alt="TacoGos 4" loading="lazy">
+          <img class="carousel-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" src="./images/tacogos.jpeg" alt="TacoGos 5" loading="lazy">
+          <img class="carousel-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" src="./images/Captura de pantalla 2025-06-29 211725.png" alt="TacoGos 6" loading="lazy">
+        </div>
+        <button id="prev" aria-label="Anterior" class="absolute left-3 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white rounded-full p-2">‹</button>
+        <button id="next" aria-label="Siguiente" class="absolute right-3 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white rounded-full p-2">›</button>
+        <div id="dots" class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTACADOS -->
+  <section class="bg-sky-50 py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-black text-center">Lo que más nos piden</h2>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="rounded-xl bg-white shadow-soft overflow-hidden hover:-translate-y-1 transition">
+          <img src="./images/fotos_tacogos_hero_550x440.jpg" alt="Tacos" class="w-full h-48 object-cover" loading="lazy">
+          <div class="p-5"><h3 class="font-bold text-lg">Tacos</h3><p class="text-slate-600 mt-2">Pollo, pastor, pibil, chicharrón, GOS y más.</p></div>
+        </div>
+        <div class="rounded-xl bg-white shadow-soft overflow-hidden hover:-translate-y-1 transition">
+          <img src="./images/Captura de pantalla 2025-06-29 211725.png" alt="Pupusas" class="w-full h-48 object-cover" loading="lazy">
+          <div class="p-5"><h3 class="font-bold text-lg">Pupusas</h3><p class="text-slate-600 mt-2">Queso, Revueltas, chicharrón y mas. Con curtido y salsa.</p></div>
+        </div>
+        <div class="rounded-xl bg-white shadow-soft overflow-hidden hover:-translate-y-1 transition">
+          <img src="./images/Captura de pantalla 2025-06-29 212325.png" alt="Burritos" class="w-full h-48 object-cover" loading="lazy">
+          <div class="p-5"><h3 class="font-bold text-lg">Burritos </h3><p class="text-slate-600 mt-2">Para compartir, con queso fundido o carne.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREMIOS -->
+  <section id="premios" class="max-w-7xl mx-auto px-4 py-20">
+    <h2 class="text-3xl md:text-4xl font-black text-center">Premios & Reconocimientos</h2>
+    <p class="text-center text-slate-600 mt-2">Gracias por votar y disfrutar nuestros tacos ❤️</p>
+    <div class="mt-10 grid md:grid-cols-3 gap-6">
+      <div class="rounded-2xl border border-sky-100 bg-white p-6 text-center shadow-soft">
+        <div class="text-3xl">🥉</div>
+        <h3 class="font-bold mt-2">3º Mejor Taco de Castilla-La Mancha 2024</h3>
+        <p class="text-slate-600 text-sm mt-2">Taco de Birria</p>
+      </div>
+      <div class="rounded-2xl border border-sky-100 bg-white p-6 text-center shadow-soft">
+        <div class="text-3xl">🥈</div>
+        <h3 class="font-bold mt-2">2º Mejor Taco Delivery 2024 By Glovo</h3>
+        <p class="text-slate-600 text-sm mt-2">Taco de Birria</p>
+      </div>
+      <div class="rounded-2xl border border-sky-100 bg-white p-6 text-center shadow-soft">
+        <div class="text-3xl">🥉</div>
+        <h3 class="font-bold mt-2">3º Mejor Taco de Castilla-La Mancha 2025</h3>
+        <p class="text-slate-600 text-sm mt-2">Taco de Secreto</p>
+      </div>
+    </div>
+  </section>
+
+<!-- DELIVERY -->
+<section class="bg-white py-20">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-black text-center">Delivery & Para llevar</h2>
+    <p class="text-center text-slate-600 mt-2">
+      Entrega a domicilio desde <strong>2€</strong> (zonas cercanas) y <strong>3€</strong> (zonas extendidas).
+      También en plataformas:
+    </p>
+
+    <!-- Plataformas -->
+    <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+      <a href="https://glovoapp.com/es/es/talavera/taco-gos-talavera/" target="_blank" rel="noopener"
+         class="px-4 py-2 rounded-xl border border-sky-200 text-sky-700 bg-white hover:bg-sky-50">Glovo</a>
+      <a href="https://www.ubereats.com/es/store/tacogos/nTGE9pErQzOHtqZcIrLEIg?srsltid=AfmBOorBMyjaBiIEhEitWbXEGB1oWY2X47WZvb4Lq6dniHF5vcibyoxv"
+         target="_blank" rel="noopener"
+         class="px-4 py-2 rounded-xl border border-sky-200 text-sky-700 bg-white hover:bg-sky-50">Uber Eats</a>
+      <a href="https://www.just-eat.es/restaurants-taco-gos-talavera-de-la-reina/menu" target="_blank" rel="noopener"
+         class="px-4 py-2 rounded-xl border border-sky-200 text-sky-700 bg-white hover:bg-sky-50">Just Eat</a>
+    </div>
+
+    <!-- Botones contacto -->
+    <div class="mt-8 flex flex-wrap justify-center gap-4">
+      <a href="https://wa.me/34611836867" target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-2xl shadow-soft">
+        WhatsApp
+      </a>
+      <a href="tel:+34611836867"
+         class="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-2xl shadow-soft">
+        Llamar
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- UBICACIONES -->
+  <!-- UBICACIONES -->
+<section id="ubicaciones" class="py-20">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-black text-center">Ubicaciones & horarios</h2>
+
+    <!-- Restaurante Nuevo Centro -->
+    <div class="mt-12 grid md:grid-cols-2 gap-8 items-start">
+      <div class="rounded-2xl overflow-hidden shadow-soft">
+        <img src="./images/nuevo_centor_cambiar.jpeg" alt="Local Centro TacoGos" class="w-full h-72 object-cover">
+      </div>
+      <div class="glass p-6 rounded-2xl shadow-soft">
+        <h3 class="font-bold text-lg">Restaurante Nuevo Centro — Centro</h3>
+        <p class="text-slate-600">Talavera de la Reina</p>
+        <ul class="mt-4 text-sm space-y-1">
+          <li><strong>Lun–Jue:</strong> 13:00–16:30 · 20:00–23:30</li>
+          <li><strong>Vie–Sáb:</strong> 13:00–16:30 · 20:00–00:00</li>
+          <li><strong>Domingo:</strong> Cerrado</li>
+        </ul>
+
+        <div class="mt-4 rounded-xl overflow-hidden border border-sky-100">
+          <!-- Embed por búsqueda: centra el mapa como en la 2ª imagen -->
+          <iframe
+            src="https://www.google.com/maps?q=Av.+de+la+Constituci%C3%B3n+19,+45600+Talavera+de+la+Reina,+Toledo&z=16&output=embed"
+            width="100%" height="300" style="border:0;" loading="lazy" allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="mt-3 flex gap-3">
+          <a href="https://maps.app.goo.gl/BLi4R4217Y3izEdu8" target="_blank"
+             class="border border-sky-200 text-sky-700 px-4 py-2 rounded-xl">Abrir en Maps</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Restaurante Jacinto Aguirre -->
+    <div class="mt-12 grid md:grid-cols-2 gap-8 items-start md:flex-row-reverse">
+      <div class="rounded-2xl overflow-hidden shadow-soft order-1 md:order-none">
+        <img src="./images/jacinto.jpeg" alt="Local Barrio TacoGos" class="w-full h-72 object-cover">
+      </div>
+      <div class="glass p-6 rounded-2xl shadow-soft">
+        <h3 class="font-bold text-lg">Restaurante Jacinto Aguirre</h3>
+        <p class="text-slate-600">Talavera de la Reina</p>
+        <ul class="mt-4 text-sm space-y-1">
+          <li><strong>Lun–Jue:</strong> 20:00–23:30</li>
+          <li><strong>Vie–Sáb:</strong> 20:00–00:00</li>
+          <li><strong>Domingo:</strong> Cerrado</li>
+        </ul>
+
+        <div class="mt-4 rounded-xl overflow-hidden border border-sky-100">
+          <!-- Otra búsqueda sencilla (ajusta la calle exacta si quieres más precisión) -->
+          <iframe
+            src="https://www.google.com/maps?q=Jacinto+Aguirre,+Talavera+de+la+Reina&z=16&output=embed"
+            width="100%" height="300" style="border:0;" loading="lazy" allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="mt-3 flex gap-3">
+          <a href="https://maps.app.goo.gl/Y3w4sRN76JoeP4oDA" target="_blank"
+             class="border border-sky-200 text-sky-700 px-4 py-2 rounded-xl">Abrir en Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FRANQUICIA -->
+  <section id="franquicia" class="bg-sky-50 py-20">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-black">Franquíciate con TacoGos</h2>
+      <p class="mt-3 text-slate-700 max-w-3xl mx-auto">
+        ¿Te gustaría llevar el sabor TacoGos a tu ciudad? Modelo probado, procesos sencillos, formación y soporte continuo.
+      </p>
+      <div class="mt-8 grid md:grid-cols-3 gap-6 text-left">
+        <div class="rounded-2xl bg-white border border-sky-100 p-6 shadow-soft">
+          <h3 class="font-bold">Formación & apertura</h3>
+          <p class="text-slate-600 text-sm mt-2">Acompañamiento integral desde el día 1: menu, proveedores y operación.</p>
+        </div>
+        <div class="rounded-2xl bg-white border border-sky-100 p-6 shadow-soft">
+          <h3 class="font-bold">Marca con alma</h3>
+          <p class="text-slate-600 text-sm mt-2">Identidad única, comunidad local y producto que engancha.</p>
+        </div>
+        <div class="rounded-2xl bg-white border border-sky-100 p-6 shadow-soft">
+          <h3 class="font-bold">Rentabilidad & sencillez</h3>
+          <p class="text-slate-600 text-sm mt-2">Recetas optimizadas y procesos claros para crecer contigo.</p>
+        </div>
+      </div>
+      <a href="franquicia.html" 
+        class="mt-8 inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-2xl shadow-soft">
+        Quiero más información
+        </a>
+
+    </div>
+  </section>
+
+  <!-- POR QUÉ NOS ELIGEN -->
+<section id="por-que" class="max-w-7xl mx-auto px-4 py-16">
+  <h2 class="text-3xl md:text-4xl font-black text-center">Por qué nos eligen</h2>
+  <p class="mt-2 text-center text-slate-600 max-w-2xl mx-auto">
+    Sabor auténtico, trato cercano y precios honestos. Así es TacoGos. 🌮
+  </p>
+
+  <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <!-- 1 -->
+    <article class="flex items-start gap-5">
+      <span class="shrink-0 grid place-items-center h-14 w-14 rounded-2xl bg-tg-light text-tg-dark">
+        <!-- icono -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm-7 9a7 7 0 0 1 14 0v1H5Z"/></svg>
+      </span>
+      <div>
+        <h3 class="text-xl font-semibold">Equipo amable</h3>
+        <p class="text-slate-600">Siempre con una sonrisa para ayudarte.</p>
+      </div>
+    </article>
+
+    <!-- 2 -->
+    <article class="flex items-start gap-5">
+      <span class="shrink-0 grid place-items-center h-14 w-14 rounded-2xl bg-tg-light text-tg-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7a5 5 0 1 1-5 5 5 5 0 0 1 5-5Zm8 13H4a2 2 0 0 1-2-2 9.99 9.99 0 0 1 20 0 2 2 0 0 1-2 2Z"/></svg>
+      </span>
+      <div>
+        <h3 class="text-xl font-semibold">Comida fresca</h3>
+        <p class="text-slate-600">Ingredientes de calidad para una experiencia única.</p>
+      </div>
+    </article>
+
+    <!-- 3 -->
+    <article class="flex items-start gap-5">
+      <span class="shrink-0 grid place-items-center h-14 w-14 rounded-2xl bg-tg-light text-tg-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v2H3zM5 7h14l-1.2 10.2A3 3 0 0 1 14.82 20H9.18a3 3 0 0 1-2.98-2.8L5 7Z"/></svg>
+      </span>
+      <div>
+        <h3 class="text-xl font-semibold">Cocina de calidad</h3>
+        <p class="text-slate-600">Sabores auténticos en cada platillo.</p>
+      </div>
+    </article>
+
+    <!-- 4 -->
+    <article class="flex items-start gap-5">
+      <span class="shrink-0 grid place-items-center h-14 w-14 rounded-2xl bg-tg-light text-tg-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a5 5 0 0 1 5 5v1h3a2 2 0 0 1 2 2v8a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V10a2 2 0 0 1 2-2h3V7a5 5 0 0 1 5-5Z"/></svg>
+      </span>
+      <div>
+        <h3 class="text-xl font-semibold">Mejor servicio</h3>
+        <p class="text-slate-600">Tu satisfacción es nuestra prioridad.</p>
+      </div>
+    </article>
+
+    <!-- 5 -->
+    <article class="flex items-start gap-5">
+      <span class="shrink-0 grid place-items-center h-14 w-14 rounded-2xl bg-tg-light text-tg-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l9 6-9 6-9-6 9-6Zm0 8.18L21 17l-9 6-9-6 9-5.82Z"/></svg>
+      </span>
+      <div>
+        <h3 class="text-xl font-semibold">Variedad en el menú</h3>
+        <p class="text-slate-600">Descubre una amplia selección de platos.</p>
+      </div>
+    </article>
+
+    <!-- 6 -->
+    <article class="flex items-start gap-5">
+      <span class="shrink-0 grid place-items-center h-14 w-14 rounded-2xl bg-tg-light text-tg-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5h18v2H3zm0 6h12v2H3zm0 6h18v2H3z"/></svg>
+      </span>
+      <div>
+        <h3 class="text-xl font-semibold">Precios accesibles</h3>
+        <p class="text-slate-600">Buena comida sin romper tu presupuesto.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="border-t border-sky-100 bg-white/70">
+    <div class="max-w-7xl mx-auto px-4 py-8 grid gap-6 md:grid-cols-3 items-center">
+      <div class="text-sm">© <span id="year"></span> TacoGos · Talavera de la Reina<br><span class="text-slate-500">Tacos y pupusas hechos al momento</span></div>
+      <div class="flex items-center justify-center gap-4">
+        <a href="https://wa.me/34611836867" target="_blank" class="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-xl shadow-soft">WhatsApp</a>
+        <a href="tel:+34611836867" class="border border-sky-200 px-4 py-2 rounded-xl text-sky-700">Llamar</a>
+        <a href="mailto:tutacogos@gmail.com" class="border border-sky-200 px-4 py-2 rounded-xl text-sky-700">Email</a>
+      </div>
+      <div class="flex md:justify-end justify-center gap-4 text-sm">
+        <a href="https://www.instagram.com/tacogos/" target="_blank" class="hover:text-sky-600">Instagram</a>
+        <a href="https://tiktok.com/@REEMPLAZA_TIKTOK" target="_blank" class="hover:text-sky-600">TikTok</a>
+        <a href="#" class="hover:text-sky-600">Privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante -->
+  <a href="https://wa.me/34611836867" target="_blank" class="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white shadow-soft rounded-full p-4" aria-label="WhatsApp TacoGos">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.94 11.94 0 0 0 12.005 0C5.372 0 .005 5.367.005 11.996Z"/></svg>
+  </a>
+
+  <!-- JS robusto: año, nav y carrusel -->
+  <script>
+    // Año footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Nav móvil
+    document.getElementById('menu-btn')?.addEventListener('click', () => {
+      document.getElementById('mobile-nav')?.classList.toggle('hidden');
+    });
+
+    // === Carrusel robusto ===
+    (function () {
+      const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+      const prev = document.getElementById('prev');
+      const next = document.getElementById('next');
+      const dotsContainer = document.getElementById('dots');
+      if (!slides.length || !prev || !next || !dotsContainer) return;
+
+      let idx = 0, timer = null;
+
+      function render() {
+        slides.forEach((el, i) => {
+          el.style.opacity = i === idx ? '1' : '0';
+          el.style.zIndex = i === idx ? '1' : '0';
+        });
+        Array.from(dotsContainer.children).forEach((d, i) => {
+          d.style.transform = i === idx ? 'scale(1.3)' : 'scale(1)';
+          d.style.background = i === idx ? 'white' : 'rgba(255,255,255,.6)';
+        });
+      }
+      function goTo(i){ idx = (i + slides.length) % slides.length; render(); reset(); }
+      function nextFn(){ goTo(idx + 1); }
+      function prevFn(){ goTo(idx - 1); }
+      function reset(){ if (timer) clearInterval(timer); timer = setInterval(nextFn, 4000); }
+
+      slides.forEach((_, i) => {
+        const b = document.createElement('button');
+        b.className = 'h-2 w-2 rounded-full bg-white/60 hover:bg-white transition-transform';
+        b.type = 'button';
+        b.addEventListener('click', () => goTo(i));
+        dotsContainer.appendChild(b);
+      });
+
+      next.addEventListener('click', nextFn);
+      prev.addEventListener('click', prevFn);
+
+      render(); reset();
+    })();
+  </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    if (menuBtn && mobileNav) {
+      menuBtn.setAttribute('aria-expanded', 'false');
+      menuBtn.addEventListener('click', () => {
+        mobileNav.classList.toggle('hidden');
+        const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+        menuBtn.setAttribute('aria-expanded', String(!expanded));
+      });
+
+      // Cerrar al hacer click en un enlace del menú
+      mobileNav.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => mobileNav.classList.add('hidden'));
+      });
+    }
+  });
+</script>
+
+</body>
 </html>

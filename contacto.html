@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto · TacoGos</title>
+  <meta name="description" content="Contacto TacoGos · Dos locales en Talavera de la Reina. Escríbenos por WhatsApp o rellena el formulario." />
+  <link rel="icon" href="./images/favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { tg: { blue:'#0ea5e9', dark:'#0b74a5', light:'#e0f2fe' } },
+          boxShadow: { soft:'0 10px 30px rgba(2,132,199,.15)' }
+        }
+      }
+    }
+  </script>
+  <style>
+    .card{border:1px solid #e0f2fe;border-radius:16px;box-shadow:0 10px 30px rgba(2,132,199,.12)}
+    .shadow-soft{box-shadow:0 10px 30px rgba(2,132,199,.15)}
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-gradient-to-b from-white to-sky-50">
+
+  <!-- Aviso -->
+  <div class="w-full text-center text-sm bg-sky-600 text-white py-2">
+    📦 Delivery desde 2€ · 📍 Talavera de la Reina · 💙 ¡Gracias por apoyar lo local!
+  </div>
+
+ <!-- HEADER -->
+<header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-sky-100">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <!-- Marca -->
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="./images/logo.png" alt="TacoGos" class="h-10 w-auto rounded-lg">
+      <span class="font-black tracking-tight text-xl">TacoGos</span>
+    </a>
+
+    <!-- Nav desktop -->
+    <nav class="hidden md:flex items-center gap-6 text-sm">
+      <a href="menu.html" class="hover:text-sky-600">Menú</a>
+      <a href="index.html#quienes" class="hover:text-sky-600">Quiénes</a>
+      <a href="index.html#ubicaciones" class="hover:text-sky-600">Ubicaciones</a>
+      <a href="index.html#premios" class="hover:text-sky-600">Premios</a>
+      <a href="eventos.html" class="hover:text-sky-600">Eventos</a>
+      <a href="franquicia.html" class="hover:text-sky-600">Franquicia</a>
+      <a href="contacto.html" class="hover:text-sky-600">Contacto</a>
+
+      <a href="https://wa.me/34611836867" target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-xl shadow-soft">
+        Pedir por WhatsApp
+      </a>
+    </nav>
+
+    <!-- Botón móvil -->
+    <button id="menu-btn" class="md:hidden inline-flex items-center gap-2 px-3 py-2 rounded-xl border border-sky-200 text-sky-700">
+      <span>Menú</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+        <path fill-rule="evenodd" d="M3.75 5.25h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1 0-1.5Zm0 6h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1 0-1.5Zm0 6h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Nav móvil -->
+  <div id="mobile-nav" class="md:hidden hidden border-t border-sky-100">
+    <div class="px-4 py-3 flex flex-col gap-3 bg-white">
+      <a href="menu.html" class="py-1">Menú</a>
+      <a href="index.html#quienes" class="py-1">Quiénes</a>
+      <a href="index.html#ubicaciones" class="py-1">Ubicaciones</a>
+      <a href="index.html#premios" class="py-1">Premios</a>
+      <a href="eventos.html" class="py-1">Eventos</a>
+      <a href="franquicia.html" class="py-1">Franquicia</a>
+      <a href="contacto.html" class="py-1">Contacto</a>
+      <a href="https://wa.me/34611836867" target="_blank" rel="noopener"
+         class="inline-flex items-center justify-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-xl">
+        Pedir por WhatsApp
+      </a>
+    </div>
+  </div>
+</header>
+
+
+  <!-- HERO -->
+  <section class="relative">
+    <div class="max-w-7xl mx-auto px-4 py-12 md:py-16 text-center">
+      <h1 class="text-4xl md:text-5xl font-black">Contáctanos</h1>
+      <p class="mt-3 text-slate-600 max-w-2xl mx-auto">
+        ¿Reserva, evento o dudas? Escríbenos por WhatsApp, email o el formulario. Tenemos <strong>dos restaurantes</strong> en Talavera de la Reina.
+      </p>
+      <div class="mt-5 flex flex-wrap justify-center gap-3">
+        <a href="https://wa.me/34611836867" target="_blank" class="bg-sky-500 hover:bg-sky-600 text-white px-5 py-2 rounded-xl shadow-soft">WhatsApp directo</a>
+        <a href="mailto:tutacogos@gmail.com" class="px-5 py-2 rounded-xl border border-sky-200 text-sky-700">tutacogos@gmail.com</a>
+        <a href="tel:+34611836867" class="px-5 py-2 rounded-xl border border-sky-200 text-sky-700">+34 611 836 867</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCALES -->
+  <section id="ubicaciones" class="bg-white/60 border-y border-sky-100">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <h2 class="text-2xl md:text-3xl font-black">Nuestros locales</h2>
+      <p class="mt-1 text-slate-600">Ven a vernos o pide para llevar. Abrimos mediodía y noches (domingo cerrado).</p>
+
+      <div class="grid md:grid-cols-2 gap-6 mt-6">
+        <!-- Local 1 -->
+        <article class="card overflow-hidden">
+          <img src="./images/nuevo_centor_cambiar.jpeg" alt="TacoGos · Local 1" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <div class="flex items-center gap-3">
+              <div class="h-10 w-10 rounded-xl bg-sky-500 text-white grid place-items-center font-bold">LG</div>
+              <div>
+                <h3 class="font-bold text-lg">Restaurante Nuevo Centro</h3>
+                <p class="text-sm text-slate-600">Centro · Talavera de la Reina</p>
+              </div>
+            </div>
+            <div class="mt-4 grid grid-cols-2 gap-x-6 gap-y-1 text-sm">
+              <div class="font-semibold">Lun–Jue</div><div>13:00–16:30 · 20:00–23:30</div>
+              <div class="font-semibold">Vie–Sáb</div><div>13:00–16:30 · 19:30–00:00</div>
+              <div class="font-semibold">Domingo</div><div>Cerrado</div>
+            </div>
+            <div class="mt-4 flex gap-3">
+              <a href="https://maps.app.goo.gl/BLi4R4217Y3izEdu8" target="_blank" class="px-4 py-2 rounded-xl border border-sky-200 text-sky-700">Ver en Google Maps</a>
+              <a href="https://wa.me/34611836867" target="_blank" class="px-4 py-2 rounded-xl bg-sky-500 text-white">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Local 2 -->
+        <article class="card overflow-hidden">
+          <img src="./images/jacinto.jpeg" alt="TacoGos · Local 2" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <div class="flex items-center gap-3">
+              <div class="h-10 w-10 rounded-xl bg-sky-500 text-white grid place-items-center font-bold">LP</div>
+              <div>
+                <h3 class="font-bold text-lg">Restaurante Jacinto Aguirre</h3>
+                <p class="text-sm text-slate-600">Barrio · Talavera de la Reina</p>
+              </div>
+            </div>
+            <div class="mt-4 grid grid-cols-2 gap-x-6 gap-y-1 text-sm">
+              <div class="font-semibold">Lun–Jue</div><div>20:00–23:30</div>
+              <div class="font-semibold">Vie–Sáb</div><div>20:00–00:00</div>
+              <div class="font-semibold">Domingo</div><div>Cerrado</div>
+            </div>
+            <div class="mt-4 flex gap-3">
+              <a href="https://maps.app.goo.gl/Y3w4sRN76JoeP4oDA" target="_blank" class="px-4 py-2 rounded-xl border border-sky-200 text-sky-700">Ver en Google Maps</a>
+              <a href="https://wa.me/34611836867" target="_blank" class="px-4 py-2 rounded-xl bg-sky-500 text-white">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO -->
+  <form method="POST" action="https://api.web3forms.com/submit" class="card p-6 space-y-4">
+  <!-- CLAVE -->
+  <input type="hidden" name="access_key" value="a81cc4e0-2954-41f5-a283-de16c3ccb2ce">
+  <!-- opcional -->
+  <input type="hidden" name="subject" value="Nuevo mensaje de Contacto · TacoGos">
+  <input type="hidden" name="from_name" value="Sitio web TacoGos">
+  <!-- Honeypot anti-spam -->
+  <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+  <label class="text-sm">Nombre
+    <input name="name" required class="mt-1 w-full rounded-xl border border-sky-200 px-3 py-2" />
+  </label>
+  <label class="text-sm">Email
+    <input type="email" name="email" required class="mt-1 w-full rounded-xl border border-sky-200 px-3 py-2" />
+  </label>
+  <label class="text-sm">Teléfono
+    <input name="phone" class="mt-1 w-full rounded-xl border border-sky-200 px-3 py-2" />
+  </label>
+  <label class="text-sm">Mensaje
+    <textarea name="message" rows="5" required class="mt-1 w-full rounded-xl border border-sky-200 px-3 py-2"></textarea>
+  </label>
+
+  <!-- Redirección de éxito -->
+  <input type="hidden" name="redirect" value="success.html">
+
+  <button class="inline-flex justify-center bg-sky-500 hover:bg-sky-600 text-white px-5 py-2 rounded-xl shadow-soft" type="submit">
+    Enviar
+  </button>
+</form>
+
+
+  <!-- FOOTER -->
+  <footer class="border-t border-sky-100 bg-white/70">
+    <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm">© <span id="year"></span> TacoGos · Talavera de la Reina</p>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="index.html" class="hover:text-sky-600">Inicio</a>
+        <a href="menu.html" class="hover:text-sky-600">Menú</a>
+        <a href="franquicia.html" class="hover:text-sky-600">Franquicia</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/34611836867" target="_blank" rel="noopener"
+     class="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white shadow-soft rounded-full p-4" aria-label="WhatsApp TacoGos">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.94 11.94 0 0 0 12.005 0C5.372 0 .005 5.367.005 11.996Z"/></svg>
+  </a>
+
+  <!-- JS -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('menu-btn')?.addEventListener('click', () => {
+      document.getElementById('mobile-nav')?.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

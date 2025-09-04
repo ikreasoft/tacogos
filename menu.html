@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menú · TacoGos</title>
+  <meta name="description" content="Menú TacoGos: tacos, pupusas, quesadillas, burritos, smash burgers, hot dogs, antojitos, bebidas y postres. Hechos al momento." />
+  <link rel="icon" href="./images/favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { tg: { blue:'#0ea5e9', dark:'#0b74a5', light:'#e0f2fe' } },
+          boxShadow: { soft: '0 10px 30px rgba(2,132,199,.15)' }
+        }
+      }
+    };
+  </script>
+  <style>
+    .card{border:1px solid #e0f2fe;border-radius:16px;box-shadow:0 10px 30px rgba(2,132,199,.12)}
+    .pill{border:1px solid #cfe8fb}
+    .tabs::-webkit-scrollbar{height:8px}.tabs::-webkit-scrollbar-thumb{background:#e5f3fe;border-radius:8px}
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-gradient-to-b from-white to-sky-50">
+
+  <!-- HEADER -->
+  <!-- HEADER -->
+<header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-sky-100">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <!-- Marca -->
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="./images/logo.png" alt="TacoGos" class="h-10 w-auto rounded-lg">
+      <span class="font-black tracking-tight text-xl">TacoGos</span>
+    </a>
+
+    <!-- Nav desktop -->
+    <nav class="hidden md:flex items-center gap-6 text-sm">
+      <a href="menu.html" class="hover:text-sky-600">Menú</a>
+      <a href="index.html#quienes" class="hover:text-sky-600">Quiénes</a>
+      <a href="index.html#ubicaciones" class="hover:text-sky-600">Ubicaciones</a>
+      <a href="index.html#premios" class="hover:text-sky-600">Premios</a>
+      <a href="eventos.html" class="hover:text-sky-600">Eventos</a>
+      <a href="franquicia.html" class="hover:text-sky-600">Franquicia</a>
+      <a href="contacto.html" class="hover:text-sky-600">Contacto</a>
+
+      <a href="https://wa.me/34611836867" target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-xl shadow-soft">
+        Pedir por WhatsApp
+      </a>
+    </nav>
+
+    <!-- Botón móvil -->
+    <button id="menu-btn" class="md:hidden inline-flex items-center gap-2 px-3 py-2 rounded-xl border border-sky-200 text-sky-700">
+      <span>Menú</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+        <path fill-rule="evenodd" d="M3.75 5.25h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1 0-1.5Zm0 6h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1 0-1.5Zm0 6h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Nav móvil -->
+  <div id="mobile-nav" class="md:hidden hidden border-t border-sky-100">
+    <div class="px-4 py-3 flex flex-col gap-3 bg-white">
+      <a href="menu.html" class="py-1">Menú</a>
+      <a href="index.html#quienes" class="py-1">Quiénes</a>
+      <a href="index.html#ubicaciones" class="py-1">Ubicaciones</a>
+      <a href="index.html#premios" class="py-1">Premios</a>
+      <a href="eventos.html" class="py-1">Eventos</a>
+      <a href="franquicia.html" class="py-1">Franquicia</a>
+      <a href="contacto.html" class="py-1">Contacto</a>
+      <a href="https://wa.me/34611836867" target="_blank" rel="noopener"
+         class="inline-flex items-center justify-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-xl">
+        Pedir por WhatsApp
+      </a>
+    </div>
+  </div>
+</header>
+
+
+  <!-- HERO -->
+  <section class="relative">
+    <img src="./images/photoshoot_for_tacogos_hero_550x440.jpg" alt="Menú TacoGos" class="w-full h-[320px] object-cover">
+    <div class="absolute inset-0 bg-black/45 flex flex-col items-center justify-center text-center text-white px-4">
+      <h1 class="text-4xl md:text-5xl font-black">Nuestro Menú</h1>
+      <p class="mt-3">Hecho al momento · Delivery desde 2€ · Combos y antojos para todos</p>
+      <div class="mt-4 flex gap-3">
+        <a href="https://wa.me/34611836867" target="_blank" class="bg-sky-500 hover:bg-sky-600 text-white px-5 py-2 rounded-xl">Pedir por WhatsApp</a>
+        <a href="index.html#ubicaciones" class="bg-white/90 text-sky-700 px-5 py-2 rounded-xl">Cómo llegar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NAV de CATEGORÍAS (tipo BK) -->
+  <div class="sticky top-[64px] z-30 bg-white/90 backdrop-blur border-b border-sky-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <div id="tabs" class="tabs flex gap-2 overflow-x-auto py-3">
+        <!-- data-cat debe coincidir con el id del panel -->
+        <button class="tab pill px-4 py-2 rounded-full bg-sky-500 text-white whitespace-nowrap" data-cat="tacos">Tacos</button>
+        <button class="tab pill px-4 py-2 rounded-full bg-white whitespace-nowrap" data-cat="pupusas">Pupusas</button>
+        <button class="tab pill px-4 py-2 rounded-full bg-white whitespace-nowrap" data-cat="quesadillas">Quesadillas</button>
+        <button class="tab pill px-4 py-2 rounded-full bg-white whitespace-nowrap" data-cat="burritos">Burritos</button>
+        <button class="tab pill px-4 py-2 rounded-full bg-white whitespace-nowrap" data-cat="burgers">Smash Burgers</button>
+        <button class="tab pill px-4 py-2 rounded-full bg-white whitespace-nowrap" data-cat="hotdogs">Hot Dogs</button>
+        <button class="tab pill px-4 py-2 rounded-full bg-white whitespace-nowrap" data-cat="platos">Platos & Sándwiches</button>
+        <button class="tab pill px-4 py-2 rounded-full bg-white whitespace-nowrap" data-cat="complementos">Complementos</button>
+        <button class="tab pill px-4 py-2 rounded-full bg-white whitespace-nowrap" data-cat="bebidas">Bebidas</button>
+        <button class="tab pill px-4 py-2 rounded-full bg-white whitespace-nowrap" data-cat="postres">Postres</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TACOS -->
+  <main class="max-w-7xl mx-auto px-4 py-10">
+
+    <section id="tacos" class="panel">
+  <h2 class="text-2xl md:text-3xl font-black">Tacos</h2>
+  <p class="text-slate-600 mt-1">Tortilla de maíz bañada en salsa;</p>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+
+    <div class="card p-5">
+      <h3 class="font-bold">Taco de Birria</h3>
+      <p class="text-sm text-slate-600">Ternera deshilachada en salsa, queso, cebolla y cilantro.</p>
+      <p class="mt-2 font-semibold">1,90 €</p>
+      <p class="mt-2 text-xs text-slate-500"><strong>3º Mejor Taco CLM 2024 · 2º Mejor Taco Delivery by Glovo 2024. </strong></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Taco al Pastor</h3>
+      <p class="text-sm text-slate-600">Lomo de cerdo aliñado con piña, cebolla, queso y cilantro.</p>
+      <p class="mt-2 font-semibold">1,00 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Cochinita Pibil</h3>
+      <p class="text-sm text-slate-600">Lomo de cerdo aliñado con naranja, cebolla morada, queso y cilantro.</p>
+      <p class="mt-2 font-semibold">1,00 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Tinga de Pollo</h3>
+      <p class="text-sm text-slate-600">Pechuga de pollo guisada, queso, cebolla y cilantro.</p>
+      <p class="mt-2 font-semibold">1,00 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Taco de Chicharrón</h3>
+      <p class="text-sm text-slate-600">Chicharrón, queso, cebolla y cilantro.</p>
+      <p class="mt-2 font-semibold">1,00 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Taco de Ternera</h3>
+      <p class="text-sm text-slate-600">Ternera a la plancha, queso, cebolla y cilantro.</p>
+      <p class="mt-2 font-semibold">1,90 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Taco de Ayote (veg)</h3>
+      <p class="text-sm text-slate-600">Calabacín, pimiento verde y rojo, maíz, cebolla, cilantro y queso.</p>
+      <p class="mt-2 font-semibold">1,00 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Taco de Champiñones (veg)</h3>
+      <p class="text-sm text-slate-600">Champiñones al ajillo, cilantro y queso.</p>
+      <p class="mt-2 font-semibold">1,50 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Especial Taco Gos</h3>
+      <p class="text-sm text-slate-600">Carne mixta de la casa, queso, cebolla y cilantro.</p>
+      <p class="mt-2 font-semibold">1,00 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- PUPUSAS -->
+    <section id="pupusas" class="panel hidden">
+  <h2 class="text-2xl md:text-3xl font-black">Pupusas</h2>
+  <p class="text-slate-600 mt-1">Tortilla gruesa de maíz hecha a mano, rellena y a la plancha. </p>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+
+<div class="card p-5">
+      <h3 class="font-bold">Frijol con Queso</h3>
+      <p class="mt-2 font-semibold">Mini 1,30 € · Normal 2,20 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Revueltas</h3>
+      <p class="text-sm text-slate-600">Chicharrón, frijoles y queso.</p>
+      <p class="mt-2 font-semibold">Mini 1,30 € · Normal 2,20 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Solo Queso</h3>
+      <p class="mt-2 font-semibold">Mini 1,50 € · Normal 2,50 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Champiñones con Queso</h3>
+      <p class="mt-2 font-semibold">Mini 1,50 € · Normal 2,50 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Pollo con Queso</h3>
+      <p class="mt-2 font-semibold">Mini 1,50 € · Normal 2,50 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Chicharrón con Queso</h3>
+      <p class="mt-2 font-semibold">Mini 1,50 € · Normal 2,50 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Jalapeño con Queso</h3>
+      <p class="mt-2 font-semibold">Mini 1,50 € · Normal 2,50 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Birria con Queso</h3>
+      <p class="mt-2 font-semibold">Mini 1,90 € · Normal 3,00 €</p>
+
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+  </div>
+</section>
+
+    <!-- QUESADILLAS -->
+    <section id="quesadillas" class="panel hidden">
+  <h2 class="text-2xl md:text-3xl font-black">Quesadillas</h2>
+  <p class="text-slate-600 mt-1">Tortilla de maíz bañada en salsa + relleno a elegir, con queso. </p>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+
+    <div class="card p-5">
+      <h3 class="font-bold">Quesadilla Gos</h3>
+      <p class="text-sm text-slate-600">Carne mixta, queso, cebolla y cilantro.</p>
+      <p class="mt-2 font-semibold">3,30 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Quesadilla de Pollo</h3>
+      <p class="text-sm text-slate-600">Pechuga de pollo guisada, queso, cebolla y cilantro.</p>
+      <p class="mt-2 font-semibold">3,30 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Quesadilla de Ayote</h3>
+      <p class="text-sm text-slate-600">Calabacín, pimiento verde y rojo, maíz, cebolla guisada, cilantro y queso.</p>
+      <p class="mt-2 font-semibold">3,30 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Quesadilla al Pastor</h3>
+      <p class="text-sm text-slate-600">Lomo aliñado, queso, cebolla, piña y cilantro.</p>
+      <p class="mt-2 font-semibold">3,30 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Quesadilla de Birria</h3>
+      <p class="text-sm text-slate-600">Ternera deshilachada en salsa, queso, cebolla y cilantro.</p>
+      <p class="mt-2 font-semibold">3,90 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- BURRITOS -->
+   <!-- BURRITOS -->
+<section id="burritos" class="panel hidden">
+  <h2 class="text-2xl md:text-3xl font-black">Burritos</h2>
+  <p class="text-slate-600 mt-1">
+    Tortilla de trigo 30 cm con arroz, pico de gallo, lechuga, crema agria y alioli.
+  </p>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+    <!-- Burrito GOS -->
+    <article class="card p-5">
+      <h3 class="font-bold">Burrito GOS</h3>
+      <p class="text-sm text-slate-600">Elige pollo, chicharrón o carne picada.</p>
+
+      <!-- Precio -->
+      <ul class="mt-3 grid grid-cols-1 gap-2 text-sm">
+        <li class="text-center border rounded-lg px-2 py-2">
+          Único<br><span class="font-semibold">9,90 €</span>
+        </li>
+      </ul>
+
+      <!-- Complementos directamente aquí -->
+      <div class="mt-4">
+        <h4 class="text-sm font-semibold">Personalízalo (+0,50 € c/u):</h4>
+        <div class="mt-2 flex flex-wrap gap-2 text-xs text-slate-600">
+          <span class="px-3 py-1 rounded-full border">Cheddar</span>
+          <span class="px-3 py-1 rounded-full border">Guacamole</span>
+          <span class="px-3 py-1 rounded-full border">Mozzarella</span>
+          <span class="px-3 py-1 rounded-full border">Jalapeños</span>
+          <span class="px-3 py-1 rounded-full border">Cebolla pochada</span>
+          <span class="px-3 py-1 rounded-full border">Salchichas</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+    <!-- SMASH BURGERS -->
+<section id="burgers" class="panel hidden">
+  <h2 class="text-2xl md:text-3xl font-black">Smash Burgers</h2>
+  <p class="text-slate-600 mt-1">Pan brioche, carne smash y salsas de la casa.</p>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+
+    <!-- Cheeseburger -->
+    <article class="card p-5">
+      <h3 class="font-bold">Cheeseburger</h3>
+      <p class="text-sm text-slate-600">Queso cheddar, salsa especial, ketchup y alioli.</p>
+      <ul class="mt-3 grid grid-cols-3 gap-2 text-sm">
+        <li class="text-center border rounded-lg px-2 py-1">Normal<br><span class="font-semibold">4,50 €</span></li>
+        <li class="text-center border rounded-lg px-2 py-1">Doble<br><span class="font-semibold">6,90 €</span></li>
+        <li class="text-center border rounded-lg px-2 py-1">Triple<br><span class="font-semibold">9,90 €</span></li>
+      </ul>
+    </article>
+
+    <!-- La Mexicana -->
+    <article class="card p-5">
+      <h3 class="font-bold">La Mexicana</h3>
+      <p class="text-sm text-slate-600">Guacamole, cheddar, salsa especial y picante, tortillas tostadas, cebolla pochada, jalapeños, lechuga.</p>
+      <ul class="mt-3 grid grid-cols-3 gap-2 text-sm">
+        <li class="text-center border rounded-lg px-2 py-1">Normal<br><span class="font-semibold">6,90 €</span></li>
+        <li class="text-center border rounded-lg px-2 py-1">Doble<br><span class="font-semibold">8,90 €</span></li>
+        <li class="text-center border rounded-lg px-2 py-1">Triple<br><span class="font-semibold">10,90 €</span></li>
+      </ul>
+    </article>
+
+    <!-- La Bacon -->
+    <article class="card p-5">
+      <h3 class="font-bold">La Bacon</h3>
+      <p class="text-sm text-slate-600">Queso, bacon, lechuga, cebolla pochada, salsa especial, ketchup y alioli.</p>
+      <ul class="mt-3 grid grid-cols-3 gap-2 text-sm">
+        <li class="text-center border rounded-lg px-2 py-1">Normal<br><span class="font-semibold">6,90 €</span></li>
+        <li class="text-center border rounded-lg px-2 py-1">Doble<br><span class="font-semibold">8,90 €</span></li>
+        <li class="text-center border rounded-lg px-2 py-1">Triple<br><span class="font-semibold">10,90 €</span></li>
+      </ul>
+    </article>
+
+    <!-- La Birria -->
+    <article class="card p-5">
+      <h3 class="font-bold">La Birria</h3>
+      <p class="text-sm text-slate-600">Queso, lechuga, tomate, birria, salsa especial, ketchup y alioli.</p>
+      <ul class="mt-3 grid grid-cols-3 gap-2 text-sm">
+        <li class="text-center border rounded-lg px-2 py-1">Normal<br><span class="font-semibold">7,90 €</span></li>
+        <li class="text-center border rounded-lg px-2 py-1">Doble<br><span class="font-semibold">9,90 €</span></li>
+        <li class="text-center border rounded-lg px-2 py-1">Triple<br><span class="font-semibold">11,90 €</span></li>
+      </ul>
+    </article>
+
+    <!-- La Champi -->
+    <article class="card p-5">
+      <h3 class="font-bold">La Champi</h3>
+      <p class="text-sm text-slate-600">Guacamole, champiñones, tomate, lechuga, cebolla pochada, salsa especial, ketchup y alioli.</p>
+      <ul class="mt-3 grid grid-cols-3 gap-2 text-sm">
+        <li class="text-center border rounded-lg px-2 py-1">Normal<br><span class="font-semibold">6,90 €</span></li>
+        <li class="text-center border rounded-lg px-2 py-1">Doble<br><span class="font-semibold">8,90 €</span></li>
+        <li class="text-center border rounded-lg px-2 py-1">Triple<br><span class="font-semibold">10,90 €</span></li>
+      </ul>
+    </article>
+
+    <!-- La Torogoz -->
+    <article class="card p-5">
+      <h3 class="font-bold">La Torogoz</h3>
+      <p class="text-sm text-slate-600">Doble carne de ternera, cheddar, guacamole, tortillas tostadas, pico de gallo, aro de mozzarella rebozado, bacon y alioli.</p>
+      <ul class="mt-3 grid grid-cols-3 gap-2 text-sm">
+        <li class="col-span-3 text-center border rounded-lg px-2 py-1">Única<br><span class="font-semibold">11,90 €</span></li>
+      </ul>
+    </article>
+
+  </div>
+
+  <p class="mt-4 text-sm text-slate-600">
+    <strong>Extra:</strong> por <strong>1 €</strong> más añade <strong>patatas fritas</strong> a cualquier burger. 🍟
+  </p>
+</section>
+
+
+
+    <!-- HOT DOGS -->
+    <section id="hotdogs" class="panel hidden">
+  <h2 class="text-2xl md:text-3xl font-black">Hot Dogs</h2>
+  <p class="text-slate-600 mt-1">Salchicha de pavo ahumada a la plancha. </p>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+
+    <div class="card p-5">
+      <h3 class="font-bold">Tradicional</h3>
+      <p class="text-sm text-slate-600">Pan, cebolla picada y patatas paja.</p>
+      <p class="mt-2 font-semibold">2,50 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">GOS</h3>
+      <p class="text-sm text-slate-600">Ensaladilla picnic (americana) y patatas paja.</p>
+      <p class="mt-2 font-semibold">3,00 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Súper GOS</h3>
+      <p class="text-sm text-slate-600">Ensaladilla americana + bacon y patatas paja.</p>
+      <p class="mt-2 font-semibold">3,50 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">VIP</h3>
+      <p class="text-sm text-slate-600">Ensaladilla americana + bacon + cebolla pochada y patatas paja.</p>
+      <p class="mt-2 font-semibold">4,00 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+  </div>
+</section>
+
+    <!-- PLATOS & SÁNDWICHES -->
+    <section id="platos" class="panel hidden">
+  <h2 class="text-2xl md:text-3xl font-black">Platos Combinados & Sándwiches</h2>
+  <p class="text-slate-600 mt-1"></p>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+
+    <div class="card p-5">
+      <h3 class="font-bold">Plato Combinado</h3>
+      <p class="text-sm text-slate-600">Elige carne: pechuga de pollo, filete de ternera, solomillo o secreto + patatas fritas, 2 huevos fritos, bebida y postre.</p>
+      <p class="mt-2 font-semibold">10,95 €</p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Sándwich Club</h3>
+      <p class="text-sm text-slate-600">Pan con mantequilla, alioli, queso, jamón de pavo, lechuga, tomate, pollo y bacon.</p>
+      <p class="mt-2 font-semibold">9,00 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Sándwich Mixto</h3>
+      <p class="text-sm text-slate-600">Clásico mixto caliente.</p>
+      <p class="mt-2 font-semibold">7,50 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- COMPLEMENTOS -->
+    <section id="complementos" class="panel hidden">
+  <h2 class="text-2xl md:text-3xl font-black">Complementos</h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+
+    <div class="card p-5">
+      <h3 class="font-bold">Nachos completos</h3>
+      <p class="text-sm text-slate-600">Tortillitas de maíz, frijoles, carne picada, pico de gallo, cheddar, guacamole, jalapeños y crema agria.</p>
+      <p class="mt-2 font-semibold">9,00 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Patatas fritas</h3>
+      <p class="text-sm text-slate-600">Crujientes, perfectas para compartir.</p>
+      <p class="mt-2 font-semibold">1,50 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Pico de gallo / Jalapeño / Lima</h3>
+      <p class="text-sm text-slate-600">Extras para subirle el sabor a tus platos.</p>
+      <p class="mt-2 font-semibold">0,30 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+  </div>
+</section>
+
+    <!-- BEBIDAS -->
+    <section id="bebidas" class="panel hidden">
+  <h2 class="text-2xl md:text-3xl font-black">Bebidas</h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+
+    <div class="card p-5">
+      <h3 class="font-bold">Refrescos naturales</h3>
+      <p class="text-sm text-slate-600">Tamarindo, limonada con fresa, mango, jamaica, horchata (cacahuate).</p>
+      <p class="mt-2 font-semibold">3,00 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Refrescos</h3>
+      <p class="text-sm text-slate-600">Coca-Cola, Fanta, Sprite, Fuzetea, Aquarius.</p>
+      <p class="mt-2 font-semibold">2,20 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Agua</h3>
+      <p class="text-sm text-slate-600">Agua mineral.</p>
+      <p class="mt-2 font-semibold">2,00 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Cerveza 0,0 / Sin Alcohol</h3>
+      <p class="text-sm text-slate-600">Refrescante y ligera.</p>
+      <p class="mt-2 font-semibold">2,00 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- POSTRES -->
+    <section id="postres" class="panel hidden">
+  <h2 class="text-2xl md:text-3xl font-black">Postres</h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+
+    <div class="card p-5">
+      <h3 class="font-bold">Tarta de Queso</h3>
+      <p class="text-sm text-slate-600">Cremosa y casera.</p>
+      <p class="mt-2 font-semibold">2,50 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+    <div class="card p-5">
+      <h3 class="font-bold">Crepes</h3>
+      <p class="text-sm text-slate-600">Dulce de leche, Nutella o caramelo.</p>
+      <p class="mt-2 font-semibold">2,50 €</p>
+      <p class="mt-2 text-xs text-slate-500"></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA PEDIR + PLATAFORMAS (responsive mejorado) -->
+<section class="mt-12 rounded-3xl bg-gradient-to-r from-sky-500 to-sky-600 p-1">
+  <div class="rounded-[22px] bg-white p-6 md:p-10 grid md:grid-cols-2 gap-6 items-center">
+    <!-- Columna izquierda -->
+    <div>
+      <h3 class="text-2xl md:text-3xl font-black">¿Lo pedimos?</h3>
+      <p class="mt-2 text-slate-600">
+        Delivery desde 2€ / 3€ según zona. También en plataformas:
+      </p>
+
+      <!-- Chips plataformas -->
+      <div class="mt-4 flex flex-wrap gap-2">
+        <!-- GLOVO -->
+        <a href="https://glovoapp.com/es/es/talavera/taco-gos-talavera/"
+           target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 text-sm px-3 py-2 rounded-xl border border-sky-200 text-sky-700 hover:bg-sky-50">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><path d="M6 8v8a6 6 0 0 0 12 0V8"/>
+          </svg>
+          Glovo
+        </a>
+
+        <!-- UBER EATS -->
+        <a href="https://www.ubereats.com/es/store/tacogos/nTGE9pErQzOHtqZcIrLEIg?srsltid=AfmBOorBMyjaBiIEhEitWbXEGB1oWY2X47WZvb4Lq6dniHF5vcibyoxv"
+           target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 text-sm px-3 py-2 rounded-xl border border-sky-200 text-sky-700 hover:bg-sky-50">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4 12h16M4 6h10M4 18h12"/>
+          </svg>
+          Uber Eats
+        </a>
+
+        <!-- JUST EAT -->
+        <a href="https://www.just-eat.es/restaurants-taco-gos-talavera-de-la-reina/menu"
+           target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 text-sm px-3 py-2 rounded-xl border border-sky-200 text-sky-700 hover:bg-sky-50">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 12 12 3l9 9-9 9-9-9Z"/>
+          </svg>
+          Just Eat
+        </a>
+      </div>
+    </div>
+
+    <!-- Columna derecha (botones) -->
+    <div class="flex flex-col sm:flex-row md:justify-end gap-3 mt-2 md:mt-0">
+      <!-- WhatsApp -->
+      <a href="https://wa.me/34611836867" target="_blank"
+         class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-2xl shadow-soft">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M20.52 3.48A11.94 11.94 0 0 0 12 0 12 12 0 0 0 1.6 18.02L0 24l6.13-1.59A12 12 0 1 0 20.52 3.48Zm-8.51 18.58h-.01a9.96 9.96 0 0 1-5.09-1.4l-.36-.22-3.64.95.97-3.55-.24-.36a9.96 9.96 0 1 1 18.36-5.49c0 5.52-4.48 9.97-9.99 9.97Zm5.48-7.47c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48a7.66 7.66 0 0 1-1.66-2.06c-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5s1.07 2.9 1.22 3.1c.15.2 2.11 3.23 5.12 4.54.72.31 1.28.49 1.71.63.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+        </svg>
+        WhatsApp
+      </a>
+
+      <!-- Llamar -->
+      <a href="tel:+34611836867"
+         class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-5 py-3 rounded-2xl shadow-soft">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M6.62 10.79a15.91 15.91 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1v3.5c0 .55-.45 1-1 1C10.4 21 3 13.6 3 4c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2Z"/>
+        </svg>
+        Llamar
+      </a>
+
+      <!-- Cómo llegar -->
+      <a href="index.html#ubicaciones"
+         class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border border-sky-200 text-sky-700">
+        Cómo llegar
+      </a>
+    </div>
+  </div>
+</section>
+
+
+    <p class="mt-4 text-xs text-slate-500">*Precios orientativos. Si hay cambios en local, avísame y los actualizo.</p>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-sky-100 bg-white/70 mt-12">
+    <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm">© <span id="year"></span> TacoGos</p>
+      <div class="flex gap-4 text-sm">
+        <a class="hover:text-sky-600" href="index.html">Inicio</a>
+        <a class="hover:text-sky-600" href="franquicia.html">Franquicia</a>
+        <a class="hover:text-sky-600" href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/34611836867" target="_blank" rel="noopener"
+     class="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white shadow-soft rounded-full p-4" aria-label="WhatsApp TacoGos">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.94 11.94 0 0 0 12.005 0C5.372 0 .005 5.367.005 11.996Z"/></svg>
+  </a>
+
+  <!-- JS: tabs + año + nav móvil -->
+  <script>
+    // Año
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Nav móvil
+    document.getElementById('menu-btn')?.addEventListener('click', () => {
+      document.getElementById('mobile-nav')?.classList.toggle('hidden');
+    });
+
+    // Tabs
+    const tabs = Array.from(document.querySelectorAll('.tab'));
+    const panels = Array.from(document.querySelectorAll('.panel'));
+    function show(cat){
+      panels.forEach(p => p.classList.toggle('hidden', p.id !== cat));
+      tabs.forEach(t => {
+        const active = t.dataset.cat === cat;
+        t.classList.toggle('bg-sky-500', active);
+        t.classList.toggle('text-white', active);
+        t.classList.toggle('bg-white', !active);
+      });
+      // auto-scroll un pelín bajo el nav fijo (opcional)
+      const tabsWrap = document.getElementById('tabs');
+      const y = document.querySelector('.sticky.top-\\[64px\\]') ? 120 : 64;
+      window.scrollTo({ top: tabsWrap.getBoundingClientRect().top + window.scrollY - y, behavior:'smooth' });
+    }
+    tabs.forEach(t => t.addEventListener('click', () => show(t.dataset.cat)));
+    show('tacos'); // por defecto
+  </script>
+</body>
+</html>
